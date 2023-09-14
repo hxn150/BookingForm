@@ -1,6 +1,6 @@
 # BookingForm
 
-Booking form template created using Bootstrap for users to book an event for a specific date and see the according prices!
+Booking form template created for users to book an event for a specific date and see the according prices!
 The demo can be found on CodePen: https://codepen.io/helennguyen/pen/LYMjZEK 
 
 Live Demo: 
