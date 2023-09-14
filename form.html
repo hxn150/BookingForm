@@ -1,0 +1,155 @@
+<div class="container">
+  <div class='row'>
+
+    <!--header-->
+    <div class="col px-0">
+      <h1 class="header" style="color:#D70202">Bootstrap Booking Form:<h1>
+    </div>
+  </div>
+
+  <!--sub-text under header-->
+  <div class="row">
+    <div class="card card-body bg-light mb-3">
+      Fill out the form and click the submit button when complete...
+    </div>
+  </div>
+  <form id="myForm">
+    <!--user-card-->
+    <div class="row gx-5">
+      <div class="col-6" id="left-side">
+        <div class="row border rounded mb-3">
+
+          <div class="col">
+            <div class="row px-2 py-3 rounded-top" style="background-color:#247EC7; color:White">
+              <b>User:</b>
+            </div>
+            <div class="row px-4 py-3" id="user">
+              <div class="row">
+                <div class="col-4">
+                  <b>Username:</b>
+                </div>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="Type username..." id="username">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <b>First Name:</b>
+                </div>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="Type first name..." id="firstname">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <b>Last Name:</b>
+                </div>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="Type last name..." id="lastname">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--contact-card-->
+        <div class="row border rounded mb-3" style="color:#247EC7">
+          <div class="col">
+            <div class="row px-2 py-3 rounded-top" style="background-color:#247EC7;
+  color:White">
+              <b>Contact:</b>
+            </div>
+
+            <div class="input-group px-4 mt-3">
+              <div class="row input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-phone">&nbsp;&nbsp;&nbsp;</i></span>
+              </div>
+              <input type="text" class='form-control' placeholder="Type phone#..." name="phone" id="phone">
+            </div>
+            <div class="input-group px-4">
+              <div class="row input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-fax">&nbsp;&nbsp;&nbsp;</i></span>
+              </div>
+              <input class="form-control" type="tel" placeholder="Type fax#..." id="fax">
+            </div>
+            <div class="input-group px-4 mb-3">
+              <div class="row input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope">&nbsp;&nbsp;&nbsp;</i></span>
+              </div>
+              <input class="form-control" type="email" placeholder="Type e-mail..." id="email">
+            </div>
+          </div>
+        </div>
+
+        <!--schedule-card-->
+        <div class="row border rounded mb-3">
+          <div class="col">
+            <div class="row px-2 py-3 rounded-top" style="background-color:#247EC7; color:White">
+              <b>Schedule:</b>
+            </div>
+            <div class="card-body">
+              <label for="adults"><b>Adults:</b></label><br>
+              <input class="form-control" type="number" id="adults" name="adults" value="1" min="1"><br>
+              <div class="row pb-1">
+                <div class="col-6">
+                  <label for="checkin"><b>Check-In:</b></label><br>
+                  <input class="form-control" type="date" id="checkin" name="checkin">
+                  <div>
+                    <label for="days"><b>Days:</b></label><br>
+                    <input class="lightgrey form-control" type="text" name="days" id="days" placeholder="Displays days..." readonly>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <label for="checkout"><b>Check-Out:</b></label><br>
+                  <input class="form-control" type="date" id="checkout" name="checkout">
+                  <div>
+                    <label for="cost"><b>Cost($):</b></label><br>
+                    <input class="lightgrey form-control" type="number" id="cost" name="cost" placeholder="Displays cost..." readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--other-card-->
+      <div class="col-6" id="right-side">
+        <div class="row border rounded mb-3">
+          <div class="col">
+            <div class="row px-2 py-3 rounded-top" style="background-color:#247EC7; color:White">
+              <b>Other:</b>
+            </div>
+            <div class="row px-2 py-2 mt-2">
+              <b>Message:</b>
+            </div>
+            <div class="row px-3">
+              <textarea class="form-control" type="text" placeholder="Type message here..." cols="50" rows="22"></textarea>
+            </div>
+            <label for="bootsrange"><b>Range:</b></label><br>
+            <input type="range" min="1" max="100" style="width:100%" value="50" id="bootsrange" name="bootsrange"><br>
+            <div class="row px-2 mb-4">
+              <div class="container">
+                <input type="radio" id="low" name="priority" value="low">
+                <label for="low">Low</label>
+                <input type="radio" id="med" name="priority" value="med">
+                <label for="med">Med</label>
+                <input type="radio" id="high" name="priority" value="high">
+                <label for="high">High</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--button-->
+      <hr>
+      <div class="col-md-12">
+        <div>
+          <button type="button" class="btn btn-success btn-block px-5" id="submit-button" style="float:right; margin-left: 1%; background-color: Green; color:White;"><i class="fa fa-paper-plane"></i> Submit</button>
+          <button type="button" class="btn btn-primary btn-block px-5" id="reset-button" style="float: right; background-color:#247EC7; color:White"><i class="fa fa-eraser"></i> Reset</button>
+        </div>
+      </div>
+    </div>
+</div>
+</form>
+</div>
